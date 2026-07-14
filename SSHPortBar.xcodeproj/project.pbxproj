@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3940737D83AD413B75C1ED1D /* HostEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54768347D91B92AAEDB6BF0 /* HostEditorView.swift */; };
+		518374E9F9628253AE3C3EBF /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EE35CC8F7BAFE5777597D6 /* Connector.swift */; };
+		7DCEEE273FBC4CA19547219C /* SSHHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC71AA8FB667B6B686B09AD /* SSHHost.swift */; };
+		817D6A6A4D60EECACF25F40F /* HostOrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969EBFF39B30E98BF68266C5 /* HostOrderManager.swift */; };
+		CD472969705701D0114DA904 /* SSHPortBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D35C7D511C0F01DB87CC26E /* SSHPortBarApp.swift */; };
+		D3BED71682D95155F9BA7E79 /* SSHConfigStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965D75F6BD74CE8F9AFEFC7 /* SSHConfigStore.swift */; };
+		DF0BA6AFC7C970FFA6DFD481 /* HostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACFE254038988E966F0DD2 /* HostListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		59EE35CC8F7BAFE5777597D6 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		6CC71AA8FB667B6B686B09AD /* SSHHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHHost.swift; sourceTree = "<group>"; };
+		70ACFE254038988E966F0DD2 /* HostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListView.swift; sourceTree = "<group>"; };
+		7D35C7D511C0F01DB87CC26E /* SSHPortBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHPortBarApp.swift; sourceTree = "<group>"; };
+		8863D86B3CFA0C20E34F00C0 /* SSHPortBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSHPortBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		969EBFF39B30E98BF68266C5 /* HostOrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostOrderManager.swift; sourceTree = "<group>"; };
+		B965D75F6BD74CE8F9AFEFC7 /* SSHConfigStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConfigStore.swift; sourceTree = "<group>"; };
+		F54768347D91B92AAEDB6BF0 /* HostEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17D93B8D8008F0B2394025B3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				59EE35CC8F7BAFE5777597D6 /* Connector.swift */,
+				969EBFF39B30E98BF68266C5 /* HostOrderManager.swift */,
+				B965D75F6BD74CE8F9AFEFC7 /* SSHConfigStore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		46E63D27E75099F358EAA7FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8863D86B3CFA0C20E34F00C0 /* SSHPortBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B06EFAF9C6033BAA5E8E0AE /* SSHPortBar */ = {
+			isa = PBXGroup;
+			children = (
+				618D18D88349DD036E191926 /* App */,
+				17D93B8D8008F0B2394025B3 /* Core */,
+				C79C3CB0EDE7F269864EB6B3 /* Models */,
+				931724CDA5F5066E6CDB12BF /* Views */,
+			);
+			name = SSHPortBar;
+			path = Sources/SSHPortBar;
+			sourceTree = "<group>";
+		};
+		618D18D88349DD036E191926 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7D35C7D511C0F01DB87CC26E /* SSHPortBarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		931724CDA5F5066E6CDB12BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F54768347D91B92AAEDB6BF0 /* HostEditorView.swift */,
+				70ACFE254038988E966F0DD2 /* HostListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4EA73CEFFDBCF664350E099 = {
+			isa = PBXGroup;
+			children = (
+				4B06EFAF9C6033BAA5E8E0AE /* SSHPortBar */,
+				46E63D27E75099F358EAA7FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C79C3CB0EDE7F269864EB6B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CC71AA8FB667B6B686B09AD /* SSHHost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A1943D0AAE32529CA61511D /* SSHPortBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78A69739C5D1E0FEEB4F8C6 /* Build configuration list for PBXNativeTarget "SSHPortBar" */;
+			buildPhases = (
+				6BD84B31147846F62AA7DA3F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSHPortBar;
+			packageProductDependencies = (
+			);
+			productName = SSHPortBar;
+			productReference = 8863D86B3CFA0C20E34F00C0 /* SSHPortBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		022AD6A80A1399EE649E2298 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D29517DE889A3302A5C26C0E /* Build configuration list for PBXProject "SSHPortBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A4EA73CEFFDBCF664350E099;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 46E63D27E75099F358EAA7FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A1943D0AAE32529CA61511D /* SSHPortBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD84B31147846F62AA7DA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518374E9F9628253AE3C3EBF /* Connector.swift in Sources */,
+				3940737D83AD413B75C1ED1D /* HostEditorView.swift in Sources */,
+				DF0BA6AFC7C970FFA6DFD481 /* HostListView.swift in Sources */,
+				817D6A6A4D60EECACF25F40F /* HostOrderManager.swift in Sources */,
+				D3BED71682D95155F9BA7E79 /* SSHConfigStore.swift in Sources */,
+				7DCEEE273FBC4CA19547219C /* SSHHost.swift in Sources */,
+				CD472969705701D0114DA904 /* SSHPortBarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BBCA9CB344875C809B11296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobnielsen.sshportbar;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4134488C8C5FE3CA66898EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A888B45A7DAF7ABB7BCA73B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2643117383D2EE251EAF8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobnielsen.sshportbar;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D29517DE889A3302A5C26C0E /* Build configuration list for PBXProject "SSHPortBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4134488C8C5FE3CA66898EF7 /* Debug */,
+				A888B45A7DAF7ABB7BCA73B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F78A69739C5D1E0FEEB4F8C6 /* Build configuration list for PBXNativeTarget "SSHPortBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBCA9CB344875C809B11296 /* Debug */,
+				D2643117383D2EE251EAF8E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 022AD6A80A1399EE649E2298 /* Project object */;
+}

@@ -1,0 +1,24 @@
+name: SSHPortBar
+options:
+  bundleIdPrefix: com.jacobnielsen
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  SSHPortBar:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/SSHPortBar
+    info:
+      path: Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleDisplayName: "SSH Port Bar"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jacobnielsen.sshportbar
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_IDENTITY: "-"
