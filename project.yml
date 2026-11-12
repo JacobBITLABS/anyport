@@ -1,24 +1,44 @@
 name: SSHPortBar
+
 options:
   bundleIdPrefix: com.jacobnielsen
   deploymentTarget:
-    macOS: "14.0"
+    macOS: "26.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+
 targets:
   SSHPortBar:
     type: application
     platform: macOS
     sources:
-      - Sources/SSHPortBar
-    info:
-      path: Info.plist
-      properties:
-        LSUIElement: true
-        CFBundleDisplayName: "SSH Port Bar"
+      - path: App
+      - path: Core
+      - path: Models
+      - path: Views
+      - path: Assets.xcassets
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jacobnielsen.sshportbar
-        MARKETING_VERSION: "1.0.0"
-        CURRENT_PROJECT_VERSION: "1"
-        MACOSX_DEPLOYMENT_TARGET: "14.0"
-        SWIFT_VERSION: "5.0"
-        CODE_SIGN_IDENTITY: "-"
+        PRODUCT_BUNDLE_IDENTIFIER: com.jacobnielsen.SSHPortBar
+        PRODUCT_NAME: SSHPortBar
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Support/Info.plist
+        ENABLE_PREVIEWS: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+schemes:
+  SSHPortBar:
+    build:
+      targets:
+        SSHPortBar: all
+    run:
+      config: Debug
